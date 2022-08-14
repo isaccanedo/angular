@@ -1,0 +1,46 @@
+.total-task-analytics {
+  display: flex;
+  align-items: flex-start;
+  margin: 15px 0 15px 0;
+}
+
+.total-task-analytics2 {
+  display: flex;
+  align-items: flex-start;
+  margin: 20px 5px 5px 15px;
+  font-size: 18px;
+  color: #ffffff;
+
+}
+
+.total-task-analytics,
+.total-task .data {
+  font-size: 18px;
+  color: #c3c5cd;
+  
+}
+
+.total-task-analytics:nth-child(1) .display {
+  background: var(--done-color);
+}
+.total-task-analytics:nth-child(2) .display {
+  background: var(--todo-color);
+}
+.total-task-analytics:nth-child(3) .display {
+  background: var(--pending-color);
+}
+.total-task-analytics .display {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%; 
+  margin: 0 20px 0 20px;
+}
+.total-task-analytics .data-type {
+  font-size: 20px;
+  color: #000000;
+}
+
+
+
+
+

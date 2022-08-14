@@ -1,0 +1,32 @@
+
+  
+    <div class="content">
+      <div class="total-task-chart">
+        <div class="chart">
+          <canvas
+            baseChart
+            [data]="doughnutChartData"
+            [labels]="doughnutChartLabels"
+            [chartType]="doughnutChartType"
+            [options]="doughnutChartOptions"
+            [colors]="doughnutChartColor"
+          >
+          </canvas>
+        
+      </div>
+      <div>
+        <div *ngFor="let n of typeData" class="total-task-analytics">
+          <div class="display"><div class="total-task-analytics2">{{ n.count }}%</div></div>
+          <div>
+            <p class="data-type">{{ n.type }}</p>
+            <p class="data">{{ n.valor }} %</p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+
+<!--<app-list (refreshEmitter)="refreshEmitter()"></app-list>
+-->
